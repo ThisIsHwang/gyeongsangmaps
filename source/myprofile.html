@@ -99,45 +99,27 @@ table {
     .navibar{
         width: 100%;
     }
-    .main{
-        display: block;
-        width: 100%;
-        background-image: url("/source/img/backgroundex2.png");
-        background-repeat: repeat;
-    }
-    .maps{
-        margin-left: 200px;
-        margin-right: 200px;
-        width:70%;
-        height:700px;"
-    }
-    
-</style>
-
-<script type="text/javascript" src=" http://maps.google.com/maps/api/js?v=3.3&sensor=true"></script>
-  <script type="text/javascript"> 
-  function initialize() {
-   var myLatlng = new google.maps.LatLng(35.154210, 128.097919);
-   var myOptions = {
-    zoom: 15,
-    center: myLatlng,
-    mapTypeId: google.maps.MapTypeId.TERRAIN
+    ul{
+       text-emphasis: none;
+       text-decoration: none;
    }
-   var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-   var marker = new google.maps.Marker( {
-    position: myLatlng, 
-    map: map, 
-    title:"(주)경상대학교"
-   });   
-   var infowindow = new google.maps.InfoWindow( {
-    content: "(주)진주시 가좌동"
-   });
-   infowindow.open(map,marker);
-  }
-  window.onload=function() {
-   initialize();
-  }
-  </script>
+    .mains{
+        display: inline;
+            float: left;
+            background-color: blanchedalmond;
+            width: 80%;
+   }
+   
+    .sectionbar{
+            display: inline;
+            float: left;
+            width: 10%;
+        }
+
+    .profileimg{
+        border: solid 1px black;
+    }
+</style>
 
 </head>
 <body>
@@ -195,8 +177,21 @@ table {
    
     </div>
 <iframe class="navibar" src="nav.html" frameborder="0"></iframe>
-    <div class="main">
-        <div class="maps"  id="map_canvas"></div>
+<div class="sectionbar">
+    <div class="profileimg">
+     <img src="/source/img/temprofile.png" alt="">
     </div>
+    <div>
+
+    </div>
+     <div>
+         <ul>
+             <li><a href="">프로필편집</a></li>
+             <li><a href="">내가 쓴 글보기</a></li>
+             <li></li>
+         </ul>
+     </div>
+ </div>
+ <iframe class="mains" id="mainbody" src="profilebody.html" frameborder="0"></iframe>
 </body>
 </html>
