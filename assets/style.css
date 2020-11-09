@@ -26,6 +26,9 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     min-width: 1024px;
+    background-image: url(/img/backgroundex2.png);
+    background-position: 0px 200px;
+    background-repeat: repeat-x;
 }
 ol, ul {
 	list-style: none;
@@ -43,6 +46,8 @@ table {
 	border-spacing: 0;  
 }
 
+
+
 .banner{
         position: relative;
         z-index: 1000;
@@ -53,28 +58,37 @@ table {
         display: inline;
         float: left;
         padding-left: 30px;
+        margin-top: 10px;
     }
     .b-right{
         position:relative;
         float: right;
-        width: 40%;
-        padding-right: 200px;
-        padding-top: 20px;
+        width: 55%;
+        padding-right: 300px;
+        padding-top: 30px;
         display: inline;
         text-align: center;
+        
     }
     .b-right>table{
         width: 100%;
     }
+    .b-right>table td{
+        border-right: solid 1px #ddd;
+    }
+    .b-right>table td:first-child{
+        border-left: solid 1px #ddd;
+    }
+    
     .b-content{
         width: 20%;
-        font-size: 16pt;
+        font-size: 16px;
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding-bottom: 10px;
     }
     a{
-        text-decoration:none;
+        text-decoration:none !important; 
         color: black;
     }
     .disa{
@@ -82,11 +96,18 @@ table {
         margin-top: 10px;
         background-color:white;
         width: 75%;
-        font-size: 16pt;
+        font-size: 16px;
+        
 
     }
     .disa>td{
         padding-top:5px;
+    }
+    .disa a:hover{
+        color: black;
+    }
+    .disa a{
+        color: #777;
     }
     .b-right:hover .disa{display:table-row}
 
@@ -95,32 +116,20 @@ table {
     }
     
 .login{
-
-    border: ridge 1px black;
     float: right;
     margin-right: 20px;
-    border-radius: 7px;
     font-size: 12pt;
 }
 .profile{
-    border: ridge 1px black;
-    display: inline;
     float: right;
-    border-radius: 7px;
     margin-right: 20px;
     font-size: 12pt;
 }
 .config{
-    border: ridge 1px black;
-    display: inline;
     float: right;
-    border-radius: 7px;
     margin-right: 20px;
     font-size: 12pt;
 }
-a{
-        text-decoration:none;
-        color: black;}
 
 .loginwindow{
     margin-top: 20px;
@@ -144,3 +153,24 @@ button{
     width:80%;
     height:700px;
 }
+      
+#floating-panel {
+    background-color: #fff;
+    text-align: left;
+    font-family: "Roboto", "sans-serif";
+    line-height: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+    z-index: 5;
+  }
+  #map {
+    height:  calc(100vh - 250px);
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .panel-cont{
+      display: block;
+  }
+  nav{
+      text-align: right;
+  }
