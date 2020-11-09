@@ -1,0 +1,23 @@
+<%- include('layout/head'); %>
+<div class="sectionbar">
+    <div class="profileimg">
+     <img src="/source/img/temprofile.png" alt="">
+    </div>
+    <div>
+
+    </div>
+     <div>
+         <ul>
+            <li><a href="/myprofile?page=profile">프로필</a></li>
+            <li><a href="/myprofile?page=edit">프로필편집</a></li>
+             <li><a href="/myprofile?page=myword">내가 쓴 글보기</a></li>
+             <li></li>
+         </ul>
+     </div>
+ </div>
+ 
+ <div>
+    <%- include('profilebody/'+page); %>
+ </div>
+ 
+ <%- include('layout/foot'); %>
