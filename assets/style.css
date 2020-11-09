@@ -45,7 +45,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;  
 }
-
+/* 여기는 reset css 부분 밑에부터 작성 */
 
 
 .banner{
@@ -59,7 +59,7 @@ table {
         float: left;
         padding-left: 30px;
         margin-top: 10px;
-    }
+    }  /*화면 상단 왼쪽 로고 이미지 쪽 CSS*/
     .b-right{
         position:relative;
         float: right;
@@ -79,7 +79,7 @@ table {
     .b-right>table td:first-child{
         border-left: solid 1px #ddd;
     }
-    
+    /* 여기부터가 배너 메뉴부분 CSS */
     .b-content{
         width: 20%;
         font-size: 16px;
@@ -91,6 +91,7 @@ table {
         text-decoration:none !important; 
         color: black;
     }
+    /* 드롭다운한 메뉴 부분 CSS */
     .disa{
         display: none;
         margin-top: 10px;
@@ -111,10 +112,11 @@ table {
     }
     .b-right:hover .disa{display:table-row}
 
+    /* 여기까지가 배너부분 */
     .navibar{
         width: 100%;
     }
-    
+/* 여기서부터 NAV쪽 CSS */
 .login{
     float: right;
     margin-right: 20px;
@@ -131,12 +133,6 @@ table {
     font-size: 12pt;
 }
 
-.loginwindow{
-    margin-top: 20px;
-    float: right;
-    display: none;
-}
-.login:active .loginwindow{display:table}
 button{
     margin-top: 10px;
 }
@@ -174,3 +170,5 @@ button{
   nav{
       text-align: right;
   }
+
+  
